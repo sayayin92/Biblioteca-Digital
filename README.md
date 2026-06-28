@@ -1,4 +1,4 @@
-📚 Biblioteca Digital en Go
+📚 Biblioteca Digital en Go (2026)
 
 Sistema de gestión de biblioteca desarrollado en Go (Golang) utilizando el framework Gin, enfocado en la aplicación de conceptos de Programación Orientada a Objetos (POO) y arquitectura en capas.
 
@@ -6,6 +6,7 @@ Sistema de gestión de biblioteca desarrollado en Go (Golang) utilizando el fram
 Integrante: YUSI ARISTEGA PEÑAFIEL
 Curso: 3A
 Materia: Programación Orientada a Objetos 1
+Fecha de entrega: 28 de junio de 2026
 🚀 Descripción del proyecto
 
 Este proyecto consiste en una API REST para la gestión de una biblioteca digital, que permite administrar:
@@ -14,7 +15,7 @@ Usuarios 👤
 Libros 📚
 Préstamos 📖
 
-El sistema está desarrollado aplicando estructuras en Go (structs), modularidad y separación de responsabilidades, simulando principios de Programación Orientada a Objetos.
+El sistema está desarrollado utilizando structs en Go, separación por capas y lógica modular, simulando principios de Programación Orientada a Objetos.
 
 🧱 Arquitectura del proyecto
 Biblioteca-Digital/
@@ -43,7 +44,7 @@ Go (Golang)
 Gin Web Framework
 Arquitectura en capas
 API REST con JSON
-Estructuras (structs)
+Structs (POO en Go)
 Slices (almacenamiento en memoria)
 ▶️ Instalación y ejecución
 1. Clonar el repositorio
@@ -97,22 +98,23 @@ structs para modelar entidades
 handlers para la lógica de negocio
 routes para definir endpoints
 database en memoria con slices
-separación por módulos para mejor organización
-⚠️ Limitaciones del proyecto
+separación por módulos para escalabilidad
+⚠️ Limitaciones
 No utiliza base de datos persistente
 Los datos se pierden al reiniciar el servidor
-No incluye autenticación de usuarios
+No incluye autenticación
 Validaciones básicas
 🚀 Mejoras futuras
-Integración con MySQL o PostgreSQL
+Integración con PostgreSQL o MySQL
 Autenticación JWT 🔐
-Validaciones avanzadas de datos
-Documentación con Swagger
+Validaciones avanzadas
+Documentación Swagger
 Deploy en la nube (Render / Railway)
 👨‍💻 Autor
 Integrante: YUSI ARISTEGA PEÑAFIEL
 Curso: 3A
 Materia: Programación Orientada a Objetos 1
+Fecha: 27 de junio de 2026
 💡 Conclusión
 
-Este proyecto representa una base sólida para el aprendizaje de backend en Go, aplicando conceptos de POO, arquitectura modular y desarrollo de APIs REST.
+Este proyecto representa una base sólida para el aprendizaje de backend en Go, aplicando arquitectura en capas, POO y desarrollo de APIs REST.
