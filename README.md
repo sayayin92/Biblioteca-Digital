@@ -1,120 +1,161 @@
-📚 Biblioteca Digital en Go (2026)
+# 📚 Biblioteca Digital en Go
 
-Sistema de gestión de biblioteca desarrollado en Go (Golang) utilizando el framework Gin, enfocado en la aplicación de conceptos de Programación Orientada a Objetos (POO) y arquitectura en capas.
+Sistema de gestión de biblioteca desarrollado en **Go (Golang)** utilizando el framework **Gin**, enfocado en la aplicación de conceptos de **Programación Orientada a Objetos (POO)** y arquitectura en capas.
 
-📌 Datos del grupo
-Integrante: YUSI ARISTEGA PEÑAFIEL
-Curso: 3A
-Materia: Programación Orientada a Objetos 1
-Fecha de entrega: 28 de junio de 2026
-🚀 Descripción del proyecto
+---
 
-Este proyecto consiste en una API REST para la gestión de una biblioteca digital, que permite administrar:
+# 📌 Datos del grupo
 
-Usuarios 👤
-Libros 📚
-Préstamos 📖
+- **Integrante:** YUSI ARISTEGA PEÑAFIEL  
+- **Curso:** 3A  
+- **Materia:** Programación Orientada a Objetos 1  
+- **Fecha de entrega:** 27 de junio de 2026  
 
-El sistema está desarrollado utilizando structs en Go, separación por capas y lógica modular, simulando principios de Programación Orientada a Objetos.
+---
 
-🧱 Arquitectura del proyecto
+# 🚀 Descripción del proyecto
+
+Este proyecto es una **API REST** que permite gestionar una biblioteca digital con las siguientes funcionalidades:
+
+- 👤 Gestión de usuarios  
+- 📚 Gestión de libros  
+- 📖 Gestión de préstamos  
+
+---
+
+# 🧱 Arquitectura del proyecto
+
 Biblioteca-Digital/
 │
 ├── main.go
-│
 ├── handlers/
 │   ├── libros.go
 │   ├── usuarios.go
 │   └── prestamos.go
-│
 ├── models/
 │   ├── libro.go
 │   ├── usuario.go
 │   └── prestamo.go
-│
 ├── database/
 │   └── conexion.go
-│
 ├── routes/
 │   └── routes.go
-│
 └── go.mod
-⚙️ Tecnologías utilizadas
-Go (Golang)
-Gin Web Framework
-Arquitectura en capas
-API REST con JSON
-Structs (POO en Go)
-Slices (almacenamiento en memoria)
-▶️ Instalación y ejecución
-1. Clonar el repositorio
-git clone https://github.com/sayayin92/Biblioteca-Digital.git
-2. Entrar al proyecto
-cd Biblioteca-Digital
-3. Instalar dependencias
-go mod tidy
-4. Ejecutar el servidor
-go run main.go
-🌐 Servidor
 
-El proyecto se ejecuta en:
+---
+
+# ⚙️ Tecnologías utilizadas
+
+- Go (Golang)  
+- Gin Web Framework  
+- API REST  
+- Arquitectura en capas  
+- Structs (POO en Go)  
+- Slices (almacenamiento en memoria)  
+
+---
+
+# ▶️ Instalación y ejecución
+
+## 1. Clonar el repositorio
+
+git clone https://github.com/sayayin92/Biblioteca-Digital.git
+
+## 2. Entrar al proyecto
+
+cd Biblioteca-Digital
+
+## 3. Instalar dependencias
+
+go mod tidy
+
+## 4. Ejecutar el servidor
+
+go run main.go
+
+---
+
+# 🌐 Servidor
 
 http://localhost:8080
-📌 Endpoints de la API
-👤 Usuarios
-➕ Crear usuario
+
+---
+
+# 📌 Endpoints de la API
+
+## 👤 Usuarios
+
 POST /usuarios
+
 {
   "nombre": "Juan",
   "email": "juan@gmail.com"
 }
-📄 Listar usuarios
+
 GET /usuarios
-📚 Libros
-➕ Crear libro
+
+---
+
+## 📚 Libros
+
 POST /libros
+
 {
   "titulo": "El Quijote",
   "autor": "Cervantes"
 }
-📄 Listar libros
-GET /libros
-🔎 Buscar libro por ID
-GET /libros/:id
-📖 Préstamos
-➕ Crear préstamo
+
+GET /libros  
+GET /libros/:id  
+
+---
+
+## 📖 Préstamos
+
 POST /prestamos
+
 {
   "usuario_id": 1,
   "libro_id": 1
 }
-📄 Listar préstamos
+
 GET /prestamos
-🧠 Funcionamiento interno
 
-El sistema utiliza:
+---
 
-structs para modelar entidades
-handlers para la lógica de negocio
-routes para definir endpoints
-database en memoria con slices
-separación por módulos para escalabilidad
-⚠️ Limitaciones
-No utiliza base de datos persistente
-Los datos se pierden al reiniciar el servidor
-No incluye autenticación
-Validaciones básicas
-🚀 Mejoras futuras
-Integración con PostgreSQL o MySQL
-Autenticación JWT 🔐
-Validaciones avanzadas
-Documentación Swagger
-Deploy en la nube (Render / Railway)
-👨‍💻 Autor
-Integrante: YUSI ARISTEGA PEÑAFIEL
-Curso: 3A
-Materia: Programación Orientada a Objetos 1
-Fecha: 27 de junio de 2026
-💡 Conclusión
+# 🧠 Funcionamiento interno
 
-Este proyecto representa una base sólida para el aprendizaje de backend en Go, aplicando arquitectura en capas, POO y desarrollo de APIs REST.
+- Structs para modelar entidades  
+- Handlers para lógica de negocio  
+- Routes para endpoints  
+- Base de datos en memoria (slices)  
+
+---
+
+# ⚠️ Limitaciones
+
+- No utiliza base de datos persistente  
+- Los datos se pierden al reiniciar el servidor  
+- No incluye autenticación de usuarios  
+
+---
+
+# 🚀 Mejoras futuras
+
+- MySQL o PostgreSQL  
+- JWT (autenticación)  
+- Validaciones avanzadas  
+- Swagger (documentación API)  
+- Deploy en la nube  
+
+---
+
+# 👨‍💻 Autor
+YUSI ARISTEGA PEÑAFIEL  
+
+
+---
+
+# 💡 Conclusión
+
+Este proyecto permite comprender los fundamentos del desarrollo backend en Go, aplicando conceptos de Programación Orientada a Objetos, arquitectura en capas y creación de APIs REST, sirviendo como base para proyectos más avanzados.
